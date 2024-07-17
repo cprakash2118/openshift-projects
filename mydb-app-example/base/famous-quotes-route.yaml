@@ -1,0 +1,16 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"kind":"Route","apiVersion":"v1","metadata":{"name":"famous-quotes","creationTimestamp":null},"spec":{"to":{"kind":"","name":"famous-quotes","weight":null},"port":{"targetPort":8000}},"status":{}}
+  creationTimestamp: null
+  name: famous-quotes
+spec:
+  port:
+    targetPort: 8000
+  to:
+    kind: ""
+    name: famous-quotes
+    weight: null
+status: {}
